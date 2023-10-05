@@ -1,5 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native'
+import React from 'react'
+import { Provider, useSelector,useDispatch } from 'react-redux'
+import { configureStore, createSlice } from '@reduxjs/toolkit'
+
+import { StatusBar } from 'expo-status-bar'
+
+const initialState = {
+  counter: 0,
+}
 
 export default function App() {
   return (
